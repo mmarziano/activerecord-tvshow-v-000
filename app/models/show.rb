@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
   
   def self.highest_rating
     highest_rating = Show.highest_rating
+    binding.pry
     Show.find_by(highest_rating)
   end
 end 
